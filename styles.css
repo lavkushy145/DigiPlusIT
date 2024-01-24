@@ -1,0 +1,70 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    /* padding: 20px; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: 100vh;
+}
+
+h1 {
+    color: #4CAF50;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+#tree-container {
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+}
+
+.node {
+    position: absolute;
+    background-color: #4CAF50;
+    color: #fff;
+    border: 1px solid #388E3C;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.node.selected {
+    border: 2px solid #ff9800;
+}
+
+.connector {
+    position: absolute;
+    background-color: #ccc;
+    width: 2px;
+    height: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.node-actions {
+    margin-top: 0px;
+}
+
+.node-actions label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.node-actions input, .node-actions button {
+    margin-bottom: 10px;
+}

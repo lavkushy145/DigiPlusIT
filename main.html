@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigiPlus IT</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>DigiPlus IT</h1>
+    
+    <div class="controls">
+        <label for="nodeName">Node Value:</label>
+        <input type="text" id="nodeName" placeholder="Name">
+        <label for="nodeType">Node Type:</label>
+        <select id="nodeType">
+            <option value="single">Single Node</option>
+            <option value="child">Child Node</option>
+            <option value="parent">Parent Node</option>
+        </select>
+        <button onclick="addNode()">Add Node</button>
+    </div>
+
+    <div id="tree-container" class="tree-container">
+        <!-- Nodes and connections will be added here dynamically -->
+    </div>
+
+    <div class="node-actions">
+        <label for="updateNodeName">Update Node Name:</label>
+        <input type="text" id="updateNodeName" placeholder="New Name">
+        <button onclick="updateNode()">Update Node</button>
+        <button onclick="deleteNode()">Delete Node</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
